@@ -39,7 +39,7 @@ return {
       ensure_installed = {
         "prettier", -- prettier formatter
         "stylua", -- lua formatter
-        "ruff",
+        "ruff", -- python formatter
         "eslint_d",
         "clangd",
       },

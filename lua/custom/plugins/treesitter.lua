@@ -23,8 +23,10 @@ return {
       -- ensure these language parsers are installed
       ensure_installed = {
         "json",
+        "json5",
+        "typescript",
+        "tsx",
         "javascript",
-        "yaml",
         "html",
         "css",
         "markdown",
@@ -39,10 +41,12 @@ return {
         "vimdoc",
         "dockerfile",
         "gitignore",
+        "gitcommit",
         "query",
-        "vimdoc",
         "c",
+        "cpp",
         "fish",
+        "python",
       },
       incremental_selection = {
         enable = true,
