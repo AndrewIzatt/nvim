@@ -32,6 +32,7 @@ return {
         "lua_ls",
         "emmet_ls",
         "ruff_lsp",
+        "clangd",
       },
     })
     mason_tool_installer.setup({
@@ -40,6 +41,7 @@ return {
         "stylua", -- lua formatter
         "ruff",
         "eslint_d",
+        "clangd",
       },
     })
   end,
