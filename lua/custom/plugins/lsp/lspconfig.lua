@@ -94,7 +94,6 @@ return {
             "typescriptreact",
             "javascriptreact",
             "css",
-            "scss",
             "less",
           },
         })
@@ -117,6 +116,40 @@ return {
           },
         })
       end,
+      -- ["pyright"] = function()
+      --   lspconfig["pyright"].setup({
+      --     capabilities = capabilities,
+      --     settings = {
+      -- pyright = {
+      --   -- Using Ruff's import organizer
+      --   disableOrganizeImports = true,
+      -- },
+      -- python = {
+      --   analysis = {
+      --     -- Ignore all files for analysis to exclusively use Ruff for linting
+      --     ignore = { "*" },
+      --   },
+      -- },
+      --   },
+      -- })
+      -- end,
+      -- ["ruff"] = function()
+      --   lspconfig["ruff"].setup({
+      --     capabilities = capabilities,
+      --     on_attach = function(client, bufnr)
+      --       if client.name == "ruff" then
+      --         -- Disable hover in favor of Pyright
+      --         client.server_capabilities.hoverProvider = false
+      --       end
+      --     end,
+      --     init_options = {
+      --       settings = {
+      --         -- Any extra CLI arguments for `ruff` go here.
+      --         args = {},
+      --       },
+      --     },
+      -- })
+      -- end,
     })
   end,
 }

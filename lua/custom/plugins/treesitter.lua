@@ -45,7 +45,6 @@ return {
         "query",
         "c",
         "cpp",
-        "fish",
         "python",
       },
       incremental_selection = {

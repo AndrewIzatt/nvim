@@ -10,16 +10,16 @@ return {
         typescript = { "prettier" },
         javascriptreact = { "prettier" },
         typescriptreact = { "prettier" },
-        svelte = { "prettier" },
         css = { "prettier" },
         html = { "prettier" },
         json = { "prettier" },
-        yaml = { "prettier" },
         markdown = { "prettier" },
-        graphql = { "prettier" },
-        liquid = { "prettier" },
         lua = { "stylua" },
         python = { "ruff" },
+        ["*"] = { "codespell" },
+        -- Use the "_" filetype to run formatters on filetypes that don't
+        -- have other formatters configured.
+        ["_"] = { "trim_whitespace" },
       },
       format_on_save = {
         lsp_fallback = true,
