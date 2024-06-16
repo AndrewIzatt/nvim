@@ -13,24 +13,31 @@ return {
       local fg_gutter = "#627E97"
       local border = "#547998"
 
+      ---@class ColorScheme
+      local colors = {
+        bg = bg,
+        bg_dark = bg_dark,
+        bg_float = bg_dark,
+        bg_highlight = bg_highlight,
+        bg_popup = bg_dark,
+        bg_search = bg_search,
+        bg_sidebar = bg_dark,
+        bg_statusline = bg_dark,
+        bg_visual = bg_visual,
+        border = border,
+        fg = fg,
+        fg_dark = fg_dark,
+        fg_float = fg,
+        fg_gutter = fg_gutter,
+        fg_sidebar = fg_dark,
+      }
+
       require("tokyonight").setup({
         style = "night",
-        on_colors = function(colors)
-          colors.bg = bg
-          colors.bg_dark = bg_dark
-          colors.bg_float = bg_dark
-          colors.bg_highlight = bg_highlight
-          colors.bg_popup = bg_dark
-          colors.bg_search = bg_search
-          colors.bg_sidebar = bg_dark
-          colors.bg_statusline = bg_dark
-          colors.bg_visual = bg_visual
-          colors.border = border
-          colors.fg = fg
-          colors.fg_dark = fg_dark
-          colors.fg_float = fg
-          colors.fg_gutter = fg_gutter
-          colors.fg_sidebar = fg_dark
+        on_colors = function(c)
+          for k, v in pairs(colors) do
+            c[k] = v
+          end
         end,
       })
       -- load the colorscheme here
