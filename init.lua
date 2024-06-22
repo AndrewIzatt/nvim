@@ -1,5 +1,5 @@
-require("keymaps")
 require("options")
+require("keymaps")
 require("custom.lazy")
 
 if vim.fn.hostname() ~= "linuxmint" then
