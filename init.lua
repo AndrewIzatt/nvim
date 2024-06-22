@@ -1,5 +1,5 @@
-require("custom.core.init")
-require("custom.lazy")
+require("keymaps")
+require("options")
 
 if vim.fn.hostname() ~= "linuxmint" then
   vim.g.node_host_prog = "~/.npm-global/bin/neovim-node-host"
